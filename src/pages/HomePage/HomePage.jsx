@@ -9,6 +9,7 @@ import slider5 from "../../assets/images/slider5.webp";
 import slider6 from "../../assets/images/slider6.webp";
 import slider7 from "../../assets/images/slider7.webp";
 import CardComponent from "../../components/CardComponent/CardComponent";
+import NavbarComponent from "../../components/NavbarComponent/NavbarComponent";
 
 function HomePage() {
   const arr = ["TV", "Tu Lanh", "Lap Top"];
@@ -34,6 +35,9 @@ function HomePage() {
           }}
         >
           <CardComponent />
+        </div>
+        <div>
+          <NavbarComponent />
         </div>
       </div>
     </>
