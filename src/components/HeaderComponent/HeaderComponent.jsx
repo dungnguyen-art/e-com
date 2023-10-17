@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Input } from "antd";
+import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 import {
   WrapperHeader,
   WrapperTexthHeader,
@@ -21,17 +22,17 @@ function HeaderComponent() {
           <WrapperTexthHeader>Tiki</WrapperTexthHeader>
         </Col>
         <Col span={12}>
-          <Search
-            placeholder="Bạn tìm gì..."
-            allowClear
-            enterButton="Tìm kiếm"
+          <ButtonInputSearch
             size="large"
+            bordered = {false}
+            textButton="Tìm kiếm"
+            placeholder = "Bạn tìm gì..."
             // onSearch={onSearch}
           />
         </Col>
-        <Col span={6} style={{display: 'flex', gap: '20px'}}>
+        <Col span={6} style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
           <WrapperHeaderAccount>
-            <UserOutlined style={{ fontsize: "30px" }} />
+            <UserOutlined style={{ fontSize: "30px" }} />
             <div>
               <WrapperTextHeaderSmall>Đăng nhập/ Đăng kí</WrapperTextHeaderSmall>
               <div>
@@ -41,7 +42,7 @@ function HeaderComponent() {
             </div>
           </WrapperHeaderAccount>
           <div>
-            <ShoppingCartOutlined style={{fontsize: "30px", color: '#fff'}}/>
+            <ShoppingCartOutlined style={{fontSize: "30px", color: '#fff'}}/>
             <WrapperTextHeaderSmall style={{color: '#fff'}}>Giỏ hàng</WrapperTextHeaderSmall>
           </div>
         </Col>
